@@ -1,0 +1,177 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+</head>
+
+<!-- details card section starts from here -->
+<div id="banner">
+    <div id="cloud-scroll">
+      
+<div class="bg-image">
+    <div class="container">
+        <div class="row">
+           
+          <ul class="ds-btn">
+        <br>
+        <br>
+<!--               
+              <a class="btn btn-lg btn-danger" href="#"> -->
+                  <a (click)="routeDetails(data)" class="btn-card"><img src="https://img.icons8.com/ios-glyphs/30/000000/user-female-circle.png" >Profile</a> 
+               <!-- <i class="glyphicon glyphicon-tasks pull-left"></i><br><span><small><img src="https://img.icons8.com/ios-glyphs/30/000000/user-female-circle.png">My Profile</small></span></a>  -->
+                  
+              
+            
+             
+          </ul>
+          
+        </div>
+      </div>
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                      
+                        <img src="https://placeimg.com/380/230/tech" >
+                        <script>
+                        </script>
+                        <span><h4>Idea</h4></span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Recommended Idea</h3>
+                        <p></p>
+                            <!-- <a href="#" class="btn-card">Show More</a> -->
+                            <a (click)="routeDetails(data)" data-toggle="modal" data-target="#cardDetail" class="btn-card"><img src="https://img.icons8.com/material-rounded/24/000000/circled-chevron-down.png">Show more</a> 
+                            <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Show More</button> -->
+                            <div class="modal fade" id="cardDetail" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content" >
+                                  <div class="modal-header">
+                                    <h5 class="modal-title"></h5>
+                                    <button type="button" (click)="onClose()" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <br>
+                                  Title:
+                                    <br>
+                                   Description : 
+                                    <br>
+                             
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">APPLY</button>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/tech" alt="">
+                        <span><h4>Idea</h4></span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Recommended Idea</h3>
+                        <p></p>
+                            <!-- <a href="#" class="btn-card">Show More</a>    -->
+
+                            <a (click)="routeDetails(data)" data-toggle="modal" data-target="#cardDetail" class="btn-card"><img src="https://img.icons8.com/material-rounded/24/000000/circled-chevron-down.png">Show more</a> 
+                            <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Show More</button> -->
+                            <div class="modal fade" id="cardDetail" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content" >
+                                  <div class="modal-header">
+                                    <h5 class="modal-title"></h5>
+                                    <button type="button" (click)="onClose()" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <br>
+                                 Title: 
+                                    <br>
+                                   Description :
+                                    <br>
+                             
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">APPLY</button>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/tech" alt="">
+                        <span><h4>Idea</h4></span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Recommended Idea</h3>
+                        <p></p>
+                            <!-- <a href="#" class="btn-card">Show More</a>    -->
+                            <a (click)="routeDetails(data)" data-toggle="modal" data-target="#cardDetail" class="btn-card"><img src="https://img.icons8.com/material-rounded/24/000000/circled-chevron-down.png">Show more</a> 
+                            <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Show More</button> -->
+                            <div class="modal fade" id="cardDetail" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content" >
+                                  <div class="modal-header">
+                                    <h5 class="modal-title"></h5>
+                                    <button type="button" (click)="onClose()" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                  
+                                    <br>
+                                  Title: 
+                                    <br>
+                                   Description : 
+                                    <br>
+                             
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">APPLY</button>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+
+</div>
+</div>
+</div>
+
+<!-- details card section starts from here -->
